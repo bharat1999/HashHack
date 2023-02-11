@@ -18,6 +18,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from './src/Home.jsx';
 import Mpage from './src/Mpage';
 import CropDisease from './src/CropDisease.jsx';
+import DiseaseDetect from './src/DiseaseDetect.jsx';
 const Stack = createNativeStackNavigator();
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Mpage" component={Mpage} />
         <Stack.Screen name="CropDisease" component={CropDisease}/>
+        <Stack.Screen name="DiseaseDetect" component={DiseaseDetect}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

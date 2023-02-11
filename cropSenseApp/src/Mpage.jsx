@@ -44,9 +44,9 @@ const Mpage = props => {
             borderRadius:40
           }}
           onPress={() => {
-            props.navigation.navigate('Mpage');
+            props.navigation.navigate('DiseaseDetect');
           }}>
-          <Text style={{fontSize: 20, padding: 5}}>Crop </Text>
+          <Text style={{fontSize: 20, padding: 5}}>Disease Detection </Text>
         </TouchableOpacity>
         
 
