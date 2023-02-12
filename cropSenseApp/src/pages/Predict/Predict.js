@@ -21,6 +21,24 @@ const Predict = () => {
   });
   const imageRef = useRef();
 
+  const pre = {
+    Tomato___Bacterial_spot:
+      " Avoid areas that were planted with peppers or tomatoes during the previous year",
+    Tomato___Early_blight:
+      "Use resistant or tolerant tomato cultivars. Use pathogen-free seed and do not set diseased plants in the field.",
+    Tomato___Late_blight:
+      "Keep foliage dry. Locate your garden where it will receive morning sun",
+    Tomato___Leaf_Mold:
+      " Crop residue should be removed from the field. Staking and pruning to increase air circulation helps to control the disease.",
+    Tomato___Septoria_leaf_spot: "Do not use overhead irrigation.",
+    "Tomato___Spider_mites Two-spotted_spider_mite": 5,
+    Tomato___Target_Spot: "",
+    Tomato___Tomato_Yellow_Leaf_Curl_Virus:
+      "Removal of plants with initial symptoms may slow the spread of the disease.",
+    Tomato___Tomato_mosaic_virus: "",
+    Tomato___healthy: "",
+  };
+
   const [isLoading, setLoading] = useState(false);
 
   function handleUpload(e) {
@@ -173,6 +191,7 @@ const Predict = () => {
         {showResult && (
           <div className={styles.resContainer}>
             <p className={styles.result}>The plant have {result}</p>
+            <p className={styles.result}>Possible Precaution: {pre[result]}</p>
           </div>
         )}
       </Container>
