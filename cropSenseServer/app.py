@@ -3,6 +3,7 @@ import os
 import calendar
 import time
 import predictDisease
+import numpy as np
 from flask_cors import CORS
 app = Flask(__name__)
 
@@ -29,3 +30,4 @@ def upload_image():
     response = jsonify(data)
     response.headers.add("Access-Control-Allow-Origin", "*")
     return response
+

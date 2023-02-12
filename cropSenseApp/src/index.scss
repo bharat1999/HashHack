@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+$font1: #425f57;
+$font2: #749f82;
+$bg1: #a8e890;
+$bg2: #cfff8d;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.mainHome {
+  text-align: center;
+  height: 100vh;
+  background: url("./assets/img/banner.jpg") no-repeat center center/cover;
+}
+
+.main {
+  height: 100%;
+  background: url("./assets/img/banner.jpg") no-repeat center center/cover;
+  // position: relative;
+}
+
+// .content {
+//   margin-top: 10px;
+//   text-align: center;
+// }
+
+.heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: forestgreen;
+}
+
+.subHeading {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.imageUpload {
+  margin-top: 20px;
+  text-align: center;
+}
+
+// .imagePrev > img {
+//   height: 100%;
+//   width: 100%;
+//   object-fit: cover;
+// }
+
+// .imageUploadCard {
+//   max-width: 400px;
+//   margin: auto;
+//   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+//     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+//   background-color: #fff;
+//   padding: 24px 12px;
+//   border-radius: 8px;
+// }
+
+.uploadFileInput {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+}
+
+.uploadFileInput::file-selector-button {
+  margin-top: 8px;
+  border: none;
+  margin-right: 20px;
+  background: rgb(139, 137, 137);
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.uploadFileInput::file-selector-button:hover {
+  background: rgb(149, 148, 148);
+}
